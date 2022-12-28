@@ -1,0 +1,19 @@
+<meta charset=utf-8>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<button class="musicstart">Слушать</button>
+<audio class="music" preload="auto" loop="loop">
+<source src="https://freeuk17.listen2myradio.com/live.mp3?typeportmount=s1_4271_stream_647901959" controls="" autobuffer="" />
+</audio>
+<script> 
+jQuery(function($){
+$('.musicstart').on('click', function(){
+ $('.music')[0].play()
+});
+$('.music').hide();
+});
+</script>
+
+<script>
+    var audio = document.getElementByClass("music");
+  		audio.volume = 0.2;
+  </script>

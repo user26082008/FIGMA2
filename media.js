@@ -23,7 +23,7 @@ wavesurfer = WaveSurfer.create({
 });
 
 //загружаем нужную песню
-wavesurfer.load("O.mp3");
+wavesurfer.load("C:\Users\Андрей\Desktop\PRAKTIKA\FIGMA2\imb.mp3");
 
 //play and pause a player
 playPause.addEventListener("click", function (e) {

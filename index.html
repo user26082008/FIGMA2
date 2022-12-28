@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Сайт визитка</title>
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -50,29 +51,20 @@
               который хочет стать лучше.
             </p>
           </div>
-
+          <br>
+          <br>
+          
           <div class="audio-holder">
-            <div class="audio-block">
-              <img src="C:\Users\Андрей\Desktop\PRAKTIKA\FIGMA2\bk3.jpg" width="550" alt="">
-              <div class="audio-container">
-                <div class="audio-detail">
-                  <div class="control">
-                    <i class="fi-rr-play" id="playPause"></i>
-                  </div>
-                  <div id="wave"></div>
-                </div>
-              </div>
-            </div>
-
+              <img src="C:\Users\Андрей\Desktop\PRAKTIKA\FIGMA2\bk3.jpg" width="500" alt="">
             <div class="audio-author">
               <div>
-                <h2 class="about-title">I'M BETTER</h2>
-                <span class="about-subtitle">MoonDeity</span>
+                <h2 class="about-title">Даже без великой мечты человек способен жить дальше</h2>
+                <span class="about-subtitle">Гатс</span>
               </div>
 
               <div class="time">
-                <span id="current">0:00</span> /
-                <span id="duration">0:00</span>
+                <span id="current"></span>
+                <span id="duration"></span>
               </div>
             </div>
 
@@ -223,6 +215,24 @@
 
   <script src="wavesurfer.js"></script>
   <script src="media.js"></script>
+  <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="easing.js" type="text/javascript"></script>
+  <script src="jquery.ui.totop.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+/*
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+scrollSpeed: 1200,
+easingType: 'linear'
+};
+*/
+ 
+$().UItoTop({ easingType: 'easeOutQuart' });
+ 
+});
+</script>
 </body>
 </html>
 
